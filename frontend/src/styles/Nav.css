@@ -1,4 +1,4 @@
-nav{
+nav {
     height: 80px;
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -8,23 +8,43 @@ nav{
     position: fixed;
 }
 
-.Web_title{
+.overlay {
+
+    height: 1300px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    /* transparent white */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* for Safari */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    z-index: 2;
+}
+
+.Web_title {
     width: max-content;
     display: flex;
     column-gap: 10px;
     align-items: center;
     padding-left: 30px;
 }
-.Nav_title{
+
+
+
+.Nav_title {
     color: #44a635;
     font-size: x-large;
 }
-.Navlogo{
+
+.Navlogo {
     padding: 4px;
     border-radius: 8px;
     background-color: #44a635;
 }
-.Nav_ul{
+
+.Nav_ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -36,18 +56,136 @@ nav{
     font-weight: 600;
     letter-spacing: 1px;
 }
-.Navlinks_logo{
+
+.Navlinks_logo {
     height: 25px;
     width: auto;
     padding-right: 5px;
 }
-li{
+
+li {
     display: flex;
     align-items: center;
     font-size: medium;
-    cursor: pointer;    
+    cursor: pointer;
 }
-.Quick_links:hover{
+
+.Quick_links:hover {
     border-bottom: 6px solid #44a635;
     padding-bottom: 5px;
+}
+
+.Menu_div {
+    column-gap: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    display: none;
+    cursor: pointer;
+}
+
+.Menu_icon {
+    height: 50px;
+    width: auto;
+}
+
+.Sidebar {
+    float: right;
+    width: 70%;
+    height: max-content;
+    background-color: aquamarine;
+    position: relative;
+    z-index: 3;
+    padding-bottom: 50px;
+}
+
+.Sidebar_title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.Web_title_side {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+
+
+}
+
+.Sidebar_icons {
+    height: 20px;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.Sidebar_list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 15px;
+    width: max-content;
+}
+
+@media screen and (max-width:480px) {
+    .Menu_div {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+
+    }
+
+    .Nav_title {
+        font-size: large;
+    }
+
+    .Navlogo {
+        height: 20px;
+        width: auto;
+    }
+
+    .Nav_links {
+        display: none;
+    }
+
+    .Menu_icon {
+        height: 30px;
+    }
+
+    .Menu_lang {
+        height: 20px;
+        padding: 0;
+        overflow-y: hidden;
+    }
+
+    .Navlinks_logo {
+        height: 20px;
+    }
+    nav{
+        height: max-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .Menu_div {
+        display: block;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .Nav_links {
+        display: none;
+    }
 }
