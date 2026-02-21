@@ -15,24 +15,26 @@ function Section(): JSX.Element {
     const text = Langdata[mozhi.translation]
     return (
         <>
-            <section>                
+            <section>
                 <div className="Hero_section">
                     <div className="Headline">
                         <img style={{ height: "25px", width: "auto" }} src={Leaf_logo} alt="leaf logo" />
                         <h1 style={{ fontSize: "14px", color: "#44a635", fontWeight: "600" }}>{text.sas}</h1>
                     </div>
                     <div className="Main_article">
-                        <h1 className="Article_h1">{text.title1 }<span style={{ color: "#44a635" }}>{text.title2}</span> {text.title3}</h1>
+                        <h1 className="Article_h1">{text.title1}<span style={{ color: "#44a635"  }}>{text.title2}</span> {text.title3}</h1>
                     </div>
                     <div className="Sub_article">
                         <p>{text.desc1}</p>
                         <p>{text.desc2}</p>
                         <p>{text.desc3}</p>
                     </div>
+                    
                     <div className="Button_section">
                         <Button_primary text={text.btn1} bgcolor="#44a635" textcolor="#ffffff" bordercolor="#44a635" width="180px" />
                         <Button_primary text={text.btn2} bgcolor="white" textcolor="#2e7923" bordercolor="#2e7923" width="180px" />
                     </div>
+
 
                 </div>
                 <div className="Panels">
@@ -41,12 +43,12 @@ function Section(): JSX.Element {
                             <img src={Green_leaf} alt="greenleaf" />
                         </div>
                         <div className="Panel_desc">
-                        <h2 style={{float:"left"}}>{text.myfarm}</h2>
-                        <div style={{paddingBottom:"20px"}}>
-                            <p className="Panel_pg">{text.panel_desc11}</p>
-                            <p className="Panel_pg">{text.panel_desc12}</p>
-                        </div>
-                        <Button_primary text={text.get_start} bgcolor="#44a635" textcolor="#ffffff" bordercolor="#44a635" width="90%" />
+                            <h2 style={{ float: "left" }}>{text.myfarm}</h2>
+                            <div style={{ paddingBottom: "20px" }}>
+                                <p className="Panel_pg">{text.panel_desc11}</p>
+                                <p className="Panel_pg">{text.panel_desc12}</p>
+                            </div>
+                            <Button_primary text={text.get_start} bgcolor="#44a635" textcolor="#ffffff" bordercolor="#44a635" width="90%" />
                         </div>
                     </div>
                     <div className="Detection_panel">
@@ -54,12 +56,12 @@ function Section(): JSX.Element {
                             <img src={Detect_logo} alt="detection" />
                         </div>
                         <div className="Panel_desc">
-                        <h2>{text.btn2}</h2>
-                        <div style={{paddingBottom:"20px"}}>
-                            <p className="Panel_pg">{text.panel_desc21}</p>
-                            <p className="Panel_pg">{text.panel_desc22}</p>
-                        </div>
-                        <Button_primary text="Get Started" bgcolor="#44a635" textcolor="#ffffff" bordercolor="#44a635" width="90%" />
+                            <h2>{text.btn2}</h2>
+                            <div style={{ paddingBottom: "20px" }}>
+                                <p className="Panel_pg">{text.panel_desc21}</p>
+                                <p className="Panel_pg">{text.panel_desc22}</p>
+                            </div>
+                            <Button_primary text="Get Started" bgcolor="#44a635" textcolor="#ffffff" bordercolor="#44a635" width="90%" />
                         </div>
                     </div>
                     <div className="Admin_panel">
@@ -67,12 +69,12 @@ function Section(): JSX.Element {
                             <img src={Admin_logo} alt="admin logo" />
                         </div>
                         <div className="Panel_desc">
-                        <h2>{text.admin}</h2>
-                        <div style={{paddingBottom:"20px"}}>
-                            <p className="Panel_pg">{text.panel_desc31}</p>
-                            <p className="Panel_pg">{text.panel_desc32}</p>
-                        </div>
-                        <Button_primary text={text.get_start} bgcolor="#44a635" textcolor="#ffffff" bordercolor="#44a635" width="90%" />
+                            <h2>{text.admin}</h2>
+                            <div style={{ paddingBottom: "20px" }}>
+                                <p className="Panel_pg">{text.panel_desc31}</p>
+                                <p className="Panel_pg">{text.panel_desc32}</p>
+                            </div>
+                            <Button_primary text={text.get_start} bgcolor="#44a635" textcolor="#ffffff" bordercolor="#44a635" width="90%" />
                         </div>
                     </div>
                 </div>

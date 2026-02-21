@@ -10,7 +10,7 @@ function Footer(): JSX.Element {
         <>
             <footer>
                 <div className="User_manual">
-                    <h1 style={{ paddingLeft: "5%", paddingTop: "2%", fontSize: "50px" }}>{text.how}</h1>
+                    <h1 className="how_h1" style={{ }}>{text.how}</h1>
                     <div className="Manual_grid">
                         <div className="Grid_box">
                             <div className="Grid_step"><h1>1</h1></div>

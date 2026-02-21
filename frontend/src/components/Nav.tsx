@@ -1,4 +1,4 @@
-import { useEffect, useState, type JSX } from "react";
+import {  useState, type JSX } from "react";
 import { Langdata } from "@/Locales/language"
 import navLogo from "@/assets/crop_logo.png";
 import Home_logo from "@/assets/home_inactive_logo.png"
